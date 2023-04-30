@@ -1,0 +1,40 @@
+﻿<Window x:Class="WpfApp7.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp7"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <DockPanel LastChildFill="False">
+            <ToolBarTray DockPanel.Dock="Top">
+                <ToolBar Band="1" BandIndex="1">
+                    <Button FontSize="18" Content="Bold" FontWeight="Bold"/>
+                    <Button FontSize="18" Content="Italic" FontStyle="Italic"/>
+                    <Button FontSize="18" Content="Underline"/>
+                    <Button FontSize="18" Content=" Clear"/>
+                    <Separator/>
+                    <TextBlock Text="Font Size:" FontSize="18"></TextBlock>
+                    <ComboBox></ComboBox>
+                    <Separator/>
+                    <TextBlock Text="Color" FontSize="18" ></TextBlock>
+                    <ComboBox>
+                        <ComboBoxItem Background="Black" Content="Black" FontSize="18" Foreground="White"/>
+                        <ComboBoxItem Background="Green" Content="Green" FontSize="18"/>
+                        <ComboBoxItem Background="Blue" Content="Blue" FontSize="18" Foreground="Red"/>
+                        <ComboBoxItem Background="Orange" Content="Orange" FontSize="18"/>
+                        <ComboBoxItem Background="Purple" Content="Purple" FontSize="18"/>
+                    </ComboBox>
+                </ToolBar>
+                <ToolBar Band="2" BandIndex="1">
+                    <TextBlock Text="Start:" FontSize="18"/>
+                    <TextBox Text="0"></TextBox>
+                    <TextBlock Text="End" FontSize="18"/>
+                    <TextBox Text="0"></TextBox>
+                </ToolBar>
+            </ToolBarTray>
+            <TextBox FontSize="16" Width="800"></TextBox>
+        </DockPanel>
+    </Grid>
+</Window>
